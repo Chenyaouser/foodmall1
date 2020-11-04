@@ -16,7 +16,7 @@ public class UserDao {
         PreparedStatement ps = null;
         int row = 0;
         //写sql
-        String sql = "insert into tb_user1(id,name,password) value(null,?,?)";
+        String sql = "insert into tb_user1(id,name,password) values(null,?,?)";
         try {
             ps = conn.prepareStatement(sql);
             //给问号赋值

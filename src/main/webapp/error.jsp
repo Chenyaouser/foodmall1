@@ -5,8 +5,8 @@
 <head>
     <title>Title</title>
 </head>
-<body >
-<img src="resources/image/error.jpg">
+<body background="resources/image/error.jpg">
+
 
 </body>
 </html>

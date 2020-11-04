@@ -52,9 +52,9 @@
       <version>5.1.38</version>
     </dependency>
 
-    <!--jst1标签库    -->
+    <!--jstl标签库    -->
     <dependency>
-      <groupId>jstl</groupId>
+      <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
@@ -64,6 +64,12 @@
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
       <version>1.2.7</version>
+    </dependency>
+<!--    处理乱码-->
+    <dependency>
+      <groupId>com.github.zhanhb</groupId>
+      <artifactId>character-encoding-filter</artifactId>
+      <version>2.1.6</version>
     </dependency>
 
   </dependencies>
@@ -75,7 +81,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-          <port>8085</port>
+          <port>8081</port>
           <path>/</path>
         </configuration>
       </plugin>

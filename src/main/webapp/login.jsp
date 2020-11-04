@@ -40,6 +40,12 @@
             </div>
         </div>
 
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> 记住密码
+            </label>
+        </div>
+
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="button" id=btn class="btn btn-primary" style="width: 22%;margin-left: 150px">登录</button>
@@ -73,7 +79,7 @@
             if(data==201){
                 alert("登录成功");
                 //成功跳到主页
-                location.href="/toMain";
+                location.href="/toForm";
             }
             if(data==202){
                 alert("用户名或者密码错误");

@@ -12,12 +12,5 @@ public class TestDB {
     public static void main(String[] args) throws SQLException {
         Connection conn = DBUtil.getConn();
         System.out.println(conn);
-        FoodDao foodDao = new FoodDao();
-
-        List<Food> list = foodDao.querryfoodInfo();
-
-        for (Food food : list) {
-            System.out.println(food);
-        }
     }
 }

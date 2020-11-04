@@ -43,9 +43,9 @@ public class LoginServlet extends HttpServlet {
 //                req.getRequestDispatcher("main.jsp").forward(req,resp);
 //                pw.println("登录成功");
                 //存储数据
-//                HttpSession httpSession=req.getSession();
+                HttpSession httpSession=req.getSession();
                 //将用户名绑定到session中
-//                httpSession.setAttribute("name",name);
+                httpSession.setAttribute("name",name);
                 pw.println(201);//表示登录成功
 //                pw.println("登录成功");
             }else{

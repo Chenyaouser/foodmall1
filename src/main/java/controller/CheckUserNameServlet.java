@@ -35,8 +35,6 @@ public class CheckUserNameServlet extends HttpServlet {
             //说明注册的用户是不存在的，允许注册
            //昵称，用户名可用
             out.println("用户名可用");
-
-
         }else{
             //说明 注册该用户的用户名已经存在，不可在进行注册了。可以登录
             out.println("用户名已存在");

@@ -18,7 +18,7 @@ public class CookieServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //创建Cookie对象
-        Cookie cookie=new Cookie("Chenyaouser","is a teacher");
+        Cookie cookie=new Cookie("chenyao","is a student");
         //将已经添加内容cookie发送都给浏览器
         resp.addCookie(cookie);
 

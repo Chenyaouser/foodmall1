@@ -17,18 +17,20 @@ public class FoodServlet extends HttpServlet {
     FoodDao foodDao = new FoodDao();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //处理乱码
         req.setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
+        //接收参数
+        List<Food> list = foodDao.findALLFoodsInfo();
+        for (Food food : list) {
+            System.out.println(food.toString());
+        }
 
-        List<Food> foods = foodDao.querryfoodInfo();
-        System.out.println(foods);
-        req.getSession().setAttribute("foods",foods);
-//        resp.sendRedirect("form.jsp");
-        req.getRequestDispatcher("/main.jsp").forward(req,resp);
-
+        req.setAttribute("list", list);
+        req.getRequestDispatcher("form.jsp").forward(req, resp);
     }
-
-
-
-
 }
+
+
+
+
